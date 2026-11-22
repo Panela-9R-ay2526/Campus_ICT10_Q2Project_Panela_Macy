@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nonmetal Elements Checker</title>
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css"/>
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">My Website</div>
+
+        <ul class="nav-menu">
+            <li><a href="atlas.html">Nickname Atlas</a></li>
+            <li><a href="clubs.html">Club Member Checker</a></li>
+            <li><a href="index.html">About the Creator</a></li>
+            <li><a href="chemicals.html" class="active">Nonmetal Elements Checker</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="leaf-icon">🧪</div>
+
+            <h1>Nonmetal <span>Elements</span> Checker</h1>
+
+            <p>
+                Explore the nonmetal elements found in the periodic
+                table. Enter an element below to check its classification.
+            </p>
+        </header>
+
+        <!-- Content Section -->
+        <section id="div1">
+
+            <p class="label">Element Lookup</p>
+
+            <h2>Enter a Nonmetal Element</h2>
+
+            <input type="text" id="dictionary"
+                placeholder="Enter a nonmetal element...">
+
+            <br>
+            <br>
+
+            <button py-click="nonmetal_value">
+                Search
+            </button>
+
+            <br>
+            <br>
+
+            <hr>
+
+            <div id="result"></div>
+
+        </section>
+
+        <br>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Project by Macy Panela, 10-Ruby
+        </footer>
+
+    </main>
+
+    <!-- Python Script -->
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>

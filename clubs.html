@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PYTHON / PYSCRIPT -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Participation activity 2</title>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">My Website</div>
+
+        <ul class="nav-menu">
+            <li><a href="atlas.html">Nickname Atlas</a></li>
+            <li><a href="clubs.html">Club Member Checker</a></li>
+            <li><a href="index.html">About the Creator</a></li>
+            <li><a href="chemicals.html" class="active">Nonmetal Elements Checker</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+
+     <!-- Main Container -->
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="leaf-icon">🏆</div>
+
+            <h1>Marching Band <span>Club</span> Checker</h1>
+
+            <p>
+                Add and verify members of the Marching Band.
+                Enter your first and last name below.
+            </p>
+        </header>
+
+        <!-- Content Section -->
+        <section id="div1">
+
+            <p class="label">Member Verification</p>
+
+            <h2>Add Members!</h2>
+
+            <input type="text" id="fname"
+                placeholder="Enter your first name">
+
+            <br>
+            <br>
+
+            <input type="text" id="lname"
+                placeholder="Enter your last name">
+
+            <br>
+            <br>
+
+            <button py-click="get_name">
+                Submit
+            </button>
+
+            <br>
+            <br>
+
+            <hr>
+
+            <div id="output"></div>
+
+        </section>
+
+        <br>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Project by Macy Panela, 10-Ruby
+        </footer>
+
+    </main>
+
+    <!-- Python Script -->
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
